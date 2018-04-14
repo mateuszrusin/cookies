@@ -1,3 +1,10 @@
+<br />
+<input type="button" value="RESET" (click)="reset()">
+<br />
+<br />
+<input type="text" [(ngModel)]="amount" />
+<input type="button" value="BUY" (click)="buy()">
+
 <table border="1">
     <tr *ngFor="let addon of addons">
         <td>{{ addon.name }}</td>

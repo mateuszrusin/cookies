@@ -16,7 +16,7 @@ export class CookieComponent implements OnInit {
     }
 
     public click(): void {
-        this.store.dispatch({type: 'ADD'})
+        this.store.dispatch({type: 'ADD'});
     }
 
 }

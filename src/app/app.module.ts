@@ -1,5 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import {StoreModule} from '@ngrx/store';
 
 import { simpleReducer } from './simple.reducer';
@@ -23,6 +24,7 @@ import {AddonsComponent} from './addons/addons.component';
     ],
     imports: [
         BrowserModule,
+        FormsModule,
         StoreModule.forRoot({counter: simpleReducer})
     ],
     providers: [
